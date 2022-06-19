@@ -1,3 +1,4 @@
+//json for website
 const data = [
   {
     hospitalName: "A Nice Hospital",
