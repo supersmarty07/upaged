@@ -1,6 +1,8 @@
 import React from "react";
-
+//the only difference between this component and 'Card' component is the left color.
+//this can be addressed with dynamic value passed to change the color with scss.
 const CardInvited = ({ props }) => {
+  //setting ratings. However, this code can be more shorter with switch statment or map/foreach loop
   const ratings = (score) => {
     if (score === 1) return "⭐";
     if (score === 2) return "⭐⭐";
