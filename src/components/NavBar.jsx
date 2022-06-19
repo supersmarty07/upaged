@@ -1,7 +1,7 @@
 import React from "react";
 import logo from "../backend/logo.png";
 import avatar from "../backend/avatar.png";
-
+//provides json for the data
 const NavBar = () => {
   return (
     <div className="navBar">
