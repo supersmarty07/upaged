@@ -1,0 +1,189 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap");
+
+* {
+  font-family: "Montserrat";
+}
+
+$primarycolor: #29334f;
+$greenColor: #3aebb6;
+$fontSize: 17px;
+$heading1Wt: 700;
+$heading1Sz: 1.363rem;
+$heading2Wt: 700;
+
+.App {
+  text-align: center;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  margin-bottom: 2rem;
+  width: 1440px;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.navBar {
+  width: 100%;
+  ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    color: #333;
+  }
+
+  li {
+    float: left;
+  }
+
+  li a {
+    display: block;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  li a:hover {
+    text-decoration: underline;
+  }
+
+  .logo {
+    height: 50px;
+    width: 100px;
+  }
+
+  .avatar {
+    float: right;
+  }
+}
+
+.datebar {
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+  width: 100%;
+
+  .date {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+.heading {
+  font-weight: $heading1Wt;
+  font-size: $heading1Sz;
+  float: left;
+  padding-top: 0.25rem;
+}
+
+.bodypage {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: #f2f3f5;
+}
+
+.shifts,
+.invited {
+  width: 100%;
+}
+
+.card {
+  padding-top: 1rem;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  height: 100px;
+
+  .card-core {
+    display: flex;
+    width: 90%;
+    flex-direction: row;
+    background-color: white;
+  }
+
+  .vertical-card {
+    display: flex;
+    flex-direction: column;
+    font-size: medium;
+    padding-left: 2rem;
+    align-items: stretch !important;
+  }
+  .btn {
+    display: flex;
+    font-size: medium;
+    padding-left: 5rem;
+    margin-left: auto;
+
+    .decline {
+      margin-right: 2rem;
+      text-align: center;
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: bold;
+      border: 3px solid black;
+      background-color: white;
+    }
+    .accept {
+      margin-right: 2rem;
+      text-align: center;
+      text-decoration: none;
+      font-size: 16px;
+      border: 3px solid black;
+      background-color: black;
+      color: white;
+    }
+  }
+  .vr-bold {
+    border: 10px solid $primarycolor;
+    height: 80px;
+  }
+  .vr-bold-invited {
+    border: 10px solid $greenColor;
+    height: 80px;
+  }
+  .vr-soft {
+    margin-left: 5rem;
+    border: 2px solid #ece6e6;
+    height: 100px;
+  }
+}
+.align-items-center {
+  display: flex;
+  align-items: center;
+}
