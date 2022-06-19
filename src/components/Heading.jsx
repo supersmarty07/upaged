@@ -1,5 +1,5 @@
 import React from "react";
-
+//provides heading to the page
 const Heading = () => {
   return (
     <>
