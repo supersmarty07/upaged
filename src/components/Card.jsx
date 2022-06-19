@@ -1,6 +1,7 @@
 import React from "react";
-
+//this component can be further broken down to more components. I avoided this to prevent prop-drilling
 const Card = ({ props }) => {
+  //setting ratings. However, this code can be more shorter with switch statment or map/foreach loop
   const ratings = (score) => {
     if (score === 1) return "⭐";
     if (score === 2) return "⭐⭐";
